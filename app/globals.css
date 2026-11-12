@@ -206,7 +206,8 @@ section { position: relative; }
 .nav-links a { padding: 8px 14px; border-radius: 999px; font-size: 15.5px; color: var(--text); transition: background 0.2s, color 0.2s; }
 .nav-links a:hover { background: var(--tint); color: var(--ink); }
 .nav-actions { margin-left: auto; display: flex; align-items: center; gap: 10px; }
-.nav-actions .signin { font-size: 15.5px; padding: 8px 14px; color: var(--ink); }
+.nav-actions .signin { font-size: 15.5px; padding: 8px 14px; color: var(--ink); white-space: nowrap; }
+@media (max-width: 1100px) { .nav-inner { gap: 20px; } .nav-links { margin-left: 0; gap: 2px; } .nav-links a { padding: 8px 10px; } }
 
 .theme-toggle {
   position: relative; width: 44px; height: 44px; border-radius: 12px; border: 1px solid var(--line);
