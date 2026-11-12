@@ -202,9 +202,9 @@ export default function Home() {
                 </div>
                 <div className="gauge">
                   <svg className="gauge-ring" viewBox="0 0 80 80">
-                    <circle cx="40" cy="40" r="32" fill="none" stroke="#E9F6F0" strokeWidth="8" />
-                    <circle cx="40" cy="40" r="32" fill="none" stroke="#29AB87" strokeWidth="8" strokeLinecap="round" strokeDasharray="201" strokeDashoffset="168" transform="rotate(-90 40 40)" />
-                    <text x="40" y="45" textAnchor="middle" fontSize="16" fontWeight="600" fill="#0B2620">16</text>
+                    <circle className="track" cx="40" cy="40" r="32" fill="none" strokeWidth="8" />
+                    <circle className="val" cx="40" cy="40" r="32" fill="none" strokeWidth="8" strokeLinecap="round" strokeDasharray="201" strokeDashoffset="168" transform="rotate(-90 40 40)" />
+                    <text x="40" y="45" textAnchor="middle" fontSize="16" fontWeight="600">16</text>
                   </svg>
                   <div><b>Low customer risk</b><p>Score 16 / 100 · Standard due diligence applies</p></div>
                 </div>
@@ -299,7 +299,7 @@ export default function Home() {
                   <div><strong>0</strong><span>Audit exceptions</span></div>
                 </div>
                 <figcaption className="who">
-                  <span className="avatar" style={{ background: "linear-gradient(140deg,#7FE0C2,#29AB87)", color: "#0B2620" }}>WK</span>
+                  <span className="avatar alt">WK</span>
                   <div><b>Wanjiru Kamau</b><small>Chief Financial Officer · Forex bureau group, Nairobi</small></div>
                 </figcaption>
               </figure>

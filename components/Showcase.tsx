@@ -143,7 +143,7 @@ function Rateboards() {
         <div className="rb-head"><b>IFX Bureau · Westlands</b><span>BUY · SELL · KES</span></div>
         {r.map(([c, b, s]) => (<div className="rb-row" key={c}><b>{c}</b><span>{b}</span><span>{s}</span></div>))}
       </div>
-      <p style={{ fontSize: 12.5, color: "var(--muted)", marginTop: 12 }}>*UGX quoted per 100. Rates shown are illustrative.</p>
+      <p className="rb-note">*UGX quoted per 100. Rates shown are illustrative.</p>
     </>
   );
 }

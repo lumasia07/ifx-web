@@ -22,12 +22,18 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#29AB87",
+  themeColor: "#06110e",
 };
+
+// Runs before first paint: applies a saved theme (dark is the default).
+const themeScript = `(function(){try{var t=localStorage.getItem('ifx-theme');if(t==='light'||t==='dark'){document.documentElement.dataset.theme=t;if(t==='light'){var m=document.querySelector('meta[name="theme-color"]');if(m)m.setAttribute('content','#ffffff');}}}catch(e){}})();`;
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={outfit.variable}>
+    <html lang="en" data-theme="dark" className={outfit.variable} suppressHydrationWarning>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: themeScript }} />
+      </head>
       <body>
         {children}
         <RevealObserver />

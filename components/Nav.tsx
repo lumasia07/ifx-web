@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 import Logo from "./Logo";
 import { Arrow } from "./icons";
+import ThemeToggle from "./ThemeToggle";
 
 const links = [
   { href: "#platform", label: "Platform" },
@@ -33,6 +34,7 @@ export default function Nav() {
         </nav>
         <div className="nav-actions">
           <a className="signin" href="#contact">Client login</a>
+          <ThemeToggle />
           <a className="btn btn-primary btn-sm" href="#contact">Book a demo <Arrow /></a>
           <button
             className={`burger ${open ? "open" : ""}`}
