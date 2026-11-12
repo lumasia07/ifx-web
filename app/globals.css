@@ -244,13 +244,6 @@ section { position: relative; }
    ============================================================ */
 .hero { padding: 168px 0 96px; overflow: hidden; background: linear-gradient(180deg, var(--hero-top) 0%, var(--bg) 100%); }
 .hero-bg { position: absolute; inset: 0; pointer-events: none; }
-.hero-bg .grid {
-  position: absolute; inset: 0;
-  background-image: linear-gradient(var(--grid-line) 1px, transparent 1px), linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
-  background-size: 56px 56px;
-  mask-image: radial-gradient(ellipse 80% 60% at 50% 30%, #000 30%, transparent 75%);
-  -webkit-mask-image: radial-gradient(ellipse 80% 60% at 50% 30%, #000 30%, transparent 75%);
-}
 .glow { position: absolute; border-radius: 50%; filter: blur(80px); opacity: var(--glow-op); animation: drift 18s ease-in-out infinite alternate; }
 .glow.g1 { width: 560px; height: 560px; background: var(--glow-1); top: -180px; right: -80px; }
 .glow.g2 { width: 440px; height: 440px; background: var(--glow-2); bottom: -140px; left: -160px; animation-delay: -6s; }

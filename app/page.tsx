@@ -69,7 +69,7 @@ export default function Home() {
       <main id="top">
         {/* HERO */}
         <section className="hero">
-          <div className="hero-bg"><div className="grid" /><div className="glow g1" /><div className="glow g2" /></div>
+          <div className="hero-bg"><div className="glow g1" /><div className="glow g2" /></div>
           <div className="container hero-grid">
             <div>
               <div className="pill" data-reveal><b>Since 2007</b> Built for CBK‑licensed forex bureaus</div>
