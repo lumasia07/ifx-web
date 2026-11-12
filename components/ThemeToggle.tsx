@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 
 type Theme = "dark" | "light";
-const META = { dark: "#06110e", light: "#ffffff" };
+const META = { dark: "#000000", light: "#ffffff" };
 
 export default function ThemeToggle() {
   const [theme, setTheme] = useState<Theme>("dark");

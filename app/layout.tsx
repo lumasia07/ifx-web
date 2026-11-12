@@ -22,7 +22,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#06110e",
+  themeColor: "#000000",
 };
 
 // Runs before first paint: applies a saved theme (dark is the default).
