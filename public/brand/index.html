@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>IFX Logo Concepts</title>
+<link rel="icon" href="concept-2-spread-x.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{--ink:#0B2620;--muted:#557069;--jungle:#29AB87;--deep:#0F4F3E;--mint:#F2FAF7;--line:#DCEDE6;}
+  *{box-sizing:border-box;margin:0}
+  body{font-family:Outfit,system-ui,sans-serif;background:var(--mint);color:var(--ink);padding:56px 20px 80px}
+  .wrap{max-width:1180px;margin:0 auto}
+  .eyebrow{font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--jungle);font-weight:600}
+  h1{font-size:clamp(32px,5vw,52px);font-weight:600;letter-spacing:-.03em;margin:10px 0 12px}
+  .lead{color:var(--muted);font-size:18px;max-width:640px;line-height:1.55}
+  .grid{display:grid;gap:28px;margin-top:48px}
+  .card{background:#fff;border:1px solid var(--line);border-radius:24px;overflow:hidden;display:grid;grid-template-columns:1.2fr 1fr}
+  @media(max-width:860px){.card{grid-template-columns:1fr}}
+  .stage{padding:56px 40px;display:flex;align-items:center;justify-content:center;min-height:260px}
+  .stage.light{background:#fff}
+  .lockup{display:flex;align-items:center;gap:18px}
+  .lockup svg{width:72px;height:72px;flex:none}
+  .word{font-size:62px;font-weight:600;letter-spacing:-.045em;line-height:.9}
+  .word span{color:var(--jungle)}
+  .tag{font-size:11.5px;letter-spacing:.32em;text-transform:uppercase;color:var(--muted);margin-top:8px;font-weight:500}
+  .side{border-left:1px solid var(--line);display:grid;grid-template-rows:1fr auto}
+  @media(max-width:860px){.side{border-left:0;border-top:1px solid var(--line)}}
+  .dark{background:linear-gradient(135deg,#0B2620,#0F4F3E);display:flex;align-items:center;justify-content:center;padding:40px 24px;gap:22px}
+  .dark .word{color:#fff;font-size:44px}
+  .dark .lockup svg{width:52px;height:52px}
+  .dark .tag{color:#9FD9C6}
+  .meta{padding:24px 28px;display:flex;justify-content:space-between;gap:16px;align-items:flex-start;flex-wrap:wrap}
+  .meta h2{font-size:20px;font-weight:600;letter-spacing:-.01em}
+  .meta p{color:var(--muted);font-size:14.5px;line-height:1.55;margin-top:6px;max-width:360px}
+  .sizes{display:flex;gap:12px;align-items:flex-end}
+  .sizes svg{display:block}
+  .num{font-size:12px;font-weight:600;color:var(--jungle);letter-spacing:.12em}
+  .swatches{display:flex;gap:10px;margin-top:40px;flex-wrap:wrap}
+  .sw{border-radius:14px;padding:14px 16px;min-width:150px;font-size:13px;border:1px solid var(--line)}
+  .sw b{display:block;font-weight:600;font-size:14px}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <marker id="a1" viewBox="0 0 10 10" refX="4" refY="5" markerWidth="2.1" markerHeight="2.1" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#29AB87"/></marker>
+    <marker id="a2" viewBox="0 0 10 10" refX="4" refY="5" markerWidth="2.1" markerHeight="2.1" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#0F4F3E"/></marker>
+    <marker id="a2w" viewBox="0 0 10 10" refX="4" refY="5" markerWidth="2.1" markerHeight="2.1" orient="auto"><path d="M0 0 L10 5 L0 10 Z" fill="#fff"/></marker>
+    <linearGradient id="t" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#34BC94"/><stop offset="1" stop-color="#147458"/></linearGradient>
+  </defs>
+  <symbol id="m1" viewBox="0 0 64 64">
+    <path d="M12.3 35.5 A20 20 0 0 1 48.4 20.5" fill="none" stroke="#29AB87" stroke-width="5.5" stroke-linecap="round" marker-end="url(#a1)"/>
+    <path d="M51.7 28.5 A20 20 0 0 1 15.6 43.5" fill="none" stroke="#0F4F3E" stroke-width="5.5" stroke-linecap="round" marker-end="url(#a2)"/>
+    <circle cx="32" cy="32" r="4" fill="#29AB87"/>
+  </symbol>
+  <symbol id="m1w" viewBox="0 0 64 64">
+    <path d="M12.3 35.5 A20 20 0 0 1 48.4 20.5" fill="none" stroke="#29AB87" stroke-width="5.5" stroke-linecap="round" marker-end="url(#a1)"/>
+    <path d="M51.7 28.5 A20 20 0 0 1 15.6 43.5" fill="none" stroke="#fff" stroke-width="5.5" stroke-linecap="round" marker-end="url(#a2w)"/>
+    <circle cx="32" cy="32" r="4" fill="#29AB87"/>
+  </symbol>
+  <symbol id="m2" viewBox="0 0 64 64">
+    <rect width="64" height="64" rx="15" fill="url(#t)"/>
+    <path d="M19 21 L28 30 M36 38 L45 47" stroke="#fff" stroke-opacity=".5" stroke-width="5.5" stroke-linecap="round"/>
+    <path d="M19 45 L44 20" stroke="#fff" stroke-width="5.5" stroke-linecap="round"/>
+    <path d="M32 19 H45 V32" fill="none" stroke="#fff" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="m3" viewBox="0 0 64 64">
+    <path d="M32 5 L54 13 V30 C54 44.5 44.5 54.5 32 59 C19.5 54.5 10 44.5 10 30 V13 Z" fill="#0F4F3E"/>
+    <path d="M32 5 L54 13 V30 C54 44.5 44.5 54.5 32 59 Z" fill="#167A5E"/>
+    <circle cx="32" cy="31" r="12" fill="none" stroke="#fff" stroke-width="2.6"/>
+    <ellipse cx="32" cy="31" rx="5" ry="12" fill="none" stroke="#7FE0C2" stroke-width="2.4"/>
+    <path d="M20 31 H44" stroke="#7FE0C2" stroke-width="2.4" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="m3w" viewBox="0 0 64 64">
+    <path d="M32 5 L54 13 V30 C54 44.5 44.5 54.5 32 59 C19.5 54.5 10 44.5 10 30 V13 Z" fill="#29AB87"/>
+    <path d="M32 5 L54 13 V30 C54 44.5 44.5 54.5 32 59 Z" fill="#34BC94"/>
+    <circle cx="32" cy="31" r="12" fill="none" stroke="#fff" stroke-width="2.6"/>
+    <ellipse cx="32" cy="31" rx="5" ry="12" fill="none" stroke="#0F4F3E" stroke-width="2.4"/>
+    <path d="M20 31 H44" stroke="#0F4F3E" stroke-width="2.4" stroke-linecap="round"/>
+  </symbol>
+</svg>
+
+<div class="wrap">
+  <div class="eyebrow">IFX Brand · Logo exploration</div>
+  <h1>Three directions for the IFX mark</h1>
+  <p class="lead">Each concept pairs a geometric symbol with a lowercase Outfit wordmark. All three are shown in full colour, reversed on deep green, and at app‑icon and favicon sizes.</p>
+
+  <div class="grid">
+    <!-- Concept 1 -->
+    <article class="card">
+      <div class="stage light">
+        <div class="lockup"><svg><use href="#m1"/></svg><div><div class="word">i<span>fx</span></div><div class="tag">Forex Bureau Systems</div></div></div>
+      </div>
+      <div class="side">
+        <div class="dark"><div class="lockup"><svg><use href="#m1w"/></svg><div><div class="word">ifx</div><div class="tag">Since 2007</div></div></div></div>
+        <div class="meta">
+          <div><div class="num">CONCEPT 01</div><h2>Exchange Loop</h2><p>Two counter‑rotating arrows form a continuous circuit: buy and sell, two currencies, one balanced book. The centre dot is the bureau, the point where every trade settles.</p></div>
+          <div class="sizes"><svg width="48" height="48"><use href="#m1"/></svg><svg width="28" height="28"><use href="#m1"/></svg><svg width="16" height="16"><use href="#m1"/></svg></div>
+        </div>
+      </div>
+    </article>
+
+    <!-- Concept 2 -->
+    <article class="card">
+      <div class="stage light">
+        <div class="lockup"><svg><use href="#m2"/></svg><div><div class="word">i<span>fx</span></div><div class="tag">Forex Bureau Systems</div></div></div>
+      </div>
+      <div class="side">
+        <div class="dark"><div class="lockup"><svg><use href="#m2"/></svg><div><div class="word">ifx</div><div class="tag">Since 2007</div></div></div></div>
+        <div class="meta">
+          <div><div class="num">CONCEPT 02</div><h2>Spread X</h2><p>A rising rate line crosses a falling one to form the X in IFX. The gap where they meet is the spread, which is where a bureau earns its margin. The solid tile works well as an app icon.</p></div>
+          <div class="sizes"><svg width="48" height="48"><use href="#m2"/></svg><svg width="28" height="28"><use href="#m2"/></svg><svg width="16" height="16"><use href="#m2"/></svg></div>
+        </div>
+      </div>
+    </article>
+
+    <!-- Concept 3 -->
+    <article class="card">
+      <div class="stage light">
+        <div class="lockup"><svg><use href="#m3"/></svg><div><div class="word">i<span>fx</span></div><div class="tag">Forex Bureau Systems</div></div></div>
+      </div>
+      <div class="side">
+        <div class="dark"><div class="lockup"><svg><use href="#m3w"/></svg><div><div class="word">ifx</div><div class="tag">Since 2007</div></div></div></div>
+        <div class="meta">
+          <div><div class="num">CONCEPT 03</div><h2>Meridian Shield</h2><p>A globe inside a two‑tone shield combines international reach with protection, compliance and AML. It's the most institutional of the three and suits regulators, banks and enterprise buyers.</p></div>
+          <div class="sizes"><svg width="48" height="48"><use href="#m3"/></svg><svg width="28" height="28"><use href="#m3"/></svg><svg width="16" height="16"><use href="#m3"/></svg></div>
+        </div>
+      </div>
+    </article>
+  </div>
+
+  <div class="swatches">
+    <div class="sw" style="background:#29AB87;color:#fff;border:0"><b>Jungle</b>#29AB87</div>
+    <div class="sw" style="background:#167A5E;color:#fff;border:0"><b>Canopy</b>#167A5E</div>
+    <div class="sw" style="background:#0F4F3E;color:#fff;border:0"><b>Deep</b>#0F4F3E</div>
+    <div class="sw" style="background:#7FE0C2"><b>Mint</b>#7FE0C2</div>
+    <div class="sw" style="background:#F2FAF7"><b>Mist</b>#F2FAF7</div>
+    <div class="sw" style="background:#0B2620;color:#fff;border:0"><b>Ink</b>#0B2620</div>
+  </div>
+</div>
+</body>
+</html>
